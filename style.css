@@ -366,6 +366,7 @@ h1, p {
   flex-direction: column;
   height: 70vh;
   padding: 0;
+  margin-top: 150px;
 }
 
 .contact-info-upper-container {
@@ -426,11 +427,19 @@ footer p {
 #certifications {
   padding: 70px 20px;
   background-color: #ffffff; 
+  margin-bottom: 100px;
+}
+
+#certifications .section__text__p1 {
+  margin-bottom: 10px;
+  margin-top: 20px;
+  
 }
 
 #certifications .title {
   font-size: 2.5em;
   margin-bottom: 10px 5px;
+  margin-top: 20px;
 }
 
 #certifications .certifications-container {
