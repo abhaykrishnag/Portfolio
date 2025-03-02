@@ -7,10 +7,16 @@
 
 body {
   font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  padding-top: 110px;
+  width: 100%;
+  overflow-x: hidden;
 }
 
 html {
   scroll-behavior: smooth;
+  margin: 0;
 }
 
 p {
@@ -38,6 +44,18 @@ nav {
   list-style: none;
   font-size: 1.5rem;
 }
+
+nav ul li a {
+  text-decoration: none;
+  color: black; 
+  transition: color 0.3s ease;
+}
+
+nav ul li a.active {
+  color: rgb(10, 10, 10); 
+  font-weight: bold;
+}
+
 
 a {
   color: black;
@@ -234,6 +252,17 @@ a:hover {
   border: rgb(255, 255, 255) 0.1rem solid;
 }
 
+#desktop-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  padding: 0px 0;
+  
+  
+}
+
 #about {
     position: relative;
     margin: 40px auto;
@@ -366,7 +395,8 @@ h1, p {
   flex-direction: column;
   height: 70vh;
   padding: 0;
-  margin-top: 150px;
+  margin-top: 250px;
+  margin-bottom: 80px;
 }
 
 .contact-info-upper-container {
@@ -401,8 +431,10 @@ h1, p {
 }
 
 footer {
-  height: 26vh;
-  margin: 0 1rem;
+  margin-top: 40px;
+  margin-bottom: 0; 
+  padding-bottom: 10px; 
+  position: relative;
 }
 
 footer p {
@@ -464,6 +496,11 @@ footer p {
   background: #d0d0d0; 
 }
 
+#certifications, #contact {
+  margin-bottom: 0; 
+  padding-bottom: 0; 
+}
+
 body {
   margin: 0;
 }
@@ -516,3 +553,4 @@ body {
     flex: 0 1 100%;
   }
 }
+
